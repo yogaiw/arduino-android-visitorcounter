@@ -32,16 +32,42 @@ class MainActivity : AppCompatActivity() {
                 tv_masuk.text = visitor?.masuk.toString()
                 tv_keluar.text = visitor?.keluar.toString()
                 tv_total.text = visitor?.total.toString()
+            }
+            override fun onCancelled(p0: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+        })
 
-                val anim: Animation = AlphaAnimation(0.5f, 1.0f)
-                anim.duration = 50
-                anim.startOffset = 20
-                anim.repeatMode = Animation.REVERSE
-                anim.repeatCount = 2
+        val anim: Animation = AlphaAnimation(0.5f, 1.0f)
+        anim.duration = 50
+        anim.startOffset = 20
+        anim.repeatMode = Animation.REVERSE
+        anim.repeatCount = 2
+
+        myRef.child("masuk").addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(p0: DataSnapshot) {
                 layout_masuk.startAnimation(anim)
+            }
+
+            override fun onCancelled(p0: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+        })
+
+        myRef.child("keluar").addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(p0: DataSnapshot) {
                 layout_keluar.startAnimation(anim)
+            }
+
+            override fun onCancelled(p0: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+        })
+        myRef.child("total").addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(p0: DataSnapshot) {
                 layout_total.startAnimation(anim)
             }
+
             override fun onCancelled(p0: DatabaseError) {
                 TODO("Not yet implemented")
             }
