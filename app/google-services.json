@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "938978867564",
+    "firebase_url": "https://visitorcounterarduino-95c7a-default-rtdb.firebaseio.com",
+    "project_id": "visitorcounterarduino-95c7a",
+    "storage_bucket": "visitorcounterarduino-95c7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938978867564:android:f522d55cf26803dfb59b49",
+        "android_client_info": {
+          "package_name": "com.hureyo.viscount"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938978867564-hrv04h9rhhgbvfmn05bgbbpo24uvcbu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADrFDJbOF0_ouV6i8IHuSSMcyxAduNcsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938978867564-hrv04h9rhhgbvfmn05bgbbpo24uvcbu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

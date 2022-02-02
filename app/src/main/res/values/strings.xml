@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Viscount</string>
+    <string name="info_detail">Penghitung pengunjung berbasis IOT menggunakan Firebase sebagai cloud platform untuk menyimpan data secara realtime</string>
+</resources>

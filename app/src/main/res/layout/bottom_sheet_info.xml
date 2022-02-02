@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VISCOUNT (Visitor Counter)"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@drawable/green_gradient"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_detail"
+        android:layout_marginBottom="10sp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView
+                android:text="Muhammad Humam Zaky"
+                android:textColor="@color/black"
+                android:padding="3dip" />
+            <TextView
+                android:text="18102168"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Reza Daffa A. P."
+                android:textColor="@color/black"
+                android:padding="3dip" />
+            <TextView
+                android:text="18102175"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Yoga Indra Wijaya"
+                android:textColor="@color/black"
+                android:padding="3dip" />
+            <TextView
+                android:text="18102180"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
