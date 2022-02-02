@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import android.view.animation.Animation
 
 import android.view.animation.AlphaAnimation
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,15 +47,25 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        btn_reset.setOnClickListener {
-            resetVisitor(0,0,0)
-        }
-
         val infoBottomSheet = BottomSheetDialog(this)
+        val resetConfirmation = BottomSheetDialog(this)
         infoBottomSheet.setContentView(R.layout.bottom_sheet_info)
+        resetConfirmation.setContentView(R.layout.bottom_sheet_reset_confirmation)
 
         btn_info.setOnClickListener {
             infoBottomSheet.show()
+        }
+
+        btn_reset.setOnClickListener {
+            resetConfirmation.show()
+        }
+
+        resetConfirmation.findViewById<Button>(R.id.btn_confirm_ya)?.setOnClickListener {
+            resetVisitor(0,0,0)
+            resetConfirmation.hide()
+        }
+        resetConfirmation.findViewById<Button>(R.id.btn_confirm_tidak)?.setOnClickListener {
+            resetConfirmation.hide()
         }
     }
 
